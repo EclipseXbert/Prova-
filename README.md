@@ -2,46 +2,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Hub</title>
+    <title>Gaming Links Hub</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Sfondo nero */
-            color: #E0E0E0; /* Testo grigio chiaro */
+            font-family: 'Roboto', sans-serif;
+            background-color: #0D1117; /* Nero moderno */
+            color: #C9D1D9; /* Grigio chiaro */
             text-align: center;
             padding: 20px;
         }
         h1 {
-            color: #FFD700; /* Titolo giallo dorato */
-            margin-bottom: 30px;
+            color: #58A6FF; /* Blu brillante */
+            margin-bottom: 20px;
         }
-        .links a {
-            display: block;
-            background-color: #333333; /* Grigio scuro per i pulsanti */
-            color: #E0E0E0;
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .link-button {
+            background-color: #21262D; /* Grigio scuro */
+            color: #C9D1D9; /* Testo bianco-grigio */
             text-decoration: none;
-            margin: 10px auto;
-            padding: 15px;
-            width: 200px;
-            border-radius: 8px;
+            padding: 15px 25px;
+            border-radius: 10px;
             font-size: 18px;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.3s;
         }
-        .links a:hover {
-            background-color: #FFD700; /* Giallo dorato al passaggio del mouse */
+        .link-button:hover {
+            background-color: #58A6FF; /* Blu brillante al passaggio del mouse */
+            transform: scale(1.1); /* Effetto zoom */
         }
-        .links img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            vertical-align: middle;
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #8B949E; /* Grigio chiaro */
         }
     </style>
 </head>
 <body>
-    <h1>Gaming Hub</h1>
-    <p>Seguimi sui miei canali!</p>
+    <h1>Gaming Links Hub</h1>
+    <p>Seguimi sui miei canali social per non perdere niente!</p>
+    <div class="links-container">
+        <a class="link-button" href="https://discord.com/invite/example" target="_blank">Discord</a>
+        <a class="link-button" href="https://www.tiktok.com/@example" target="_blank">TikTok</a>
+        <a class="link-button" href="https://www.youtube.com/c/example" target="_blank">YouTube</a>
+        <a class="link-button" href="https://www.twitch.tv/example" target="_blank">Twitch</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gaming Links Hub. Tutti i diritti riservati.</p>
+    </footer>
 </body>
-    
 </html>
